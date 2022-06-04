@@ -1,0 +1,53 @@
+@font-face {
+    font-family: batman;
+    src: url(/batman_forever/batmfa__.ttf);
+}
+
+html{
+    background-image:url(/bg.jpg);
+    font-family: batman;
+    color: white !important;
+    display: grid;
+    place-items: center;
+    height:100vh
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+.text{
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+input{
+    color: rgb(255, 238, 0);
+    background-color: black;
+    border: 1px solid rgb(255, 238, 0);
+    height: 4vh;
+    width: clamp(200px,20vw,25vw);
+    text-align: center;
+    font-family: batman;
+}
+
+#ageID{
+    width: clamp(90px,8vw,15vw);
+}
+
+#newInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    height: 100px;
+    background: transparent;
+    border:none;
+    cursor: pointer;
+}
