@@ -4,12 +4,19 @@
 }
 
 html{
-    background-image:url(/bg.jpg);
     font-family: batman;
     color: white !important;
     display: grid;
     place-items: center;
-    height:100vh
+    height:100vh;
+}
+
+.bgblack{
+    background-image:url(/bg.jpg);
+}
+
+.bgred{
+    background-image:url(/pt.jpg);
 }
 
 body{
@@ -51,3 +58,8 @@ input{
     border:none;
     cursor: pointer;
 }
+
+#s2, #s3{
+    display: none;
+}
+
