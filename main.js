@@ -1,32 +1,39 @@
-// const getLocalStorage = () => JSON.parse(localStorage.getItem('name')) ?? []
-// const setLocalStorage = (newInfo) => localStorage.setItem("name", JSON.stringify(newInfo))
-
-// let newInfo{
-//     name: Mylenna,
-//     age: 30;
-// }
-
-function text(){document.getElementById('body').innerHTML = '<main class="content"><h1 class="text">Ok! Agora...</h1><form id="newInfo"><h2 class="text">Qual sua idade?</h2><input type="text" id="ageID"><button type="button" id="btnid2" class="btn"><img src="/logo.png" alt="logodobatman" height="100" class="logo"></button></form></main>'}
+let namea = document.getElementById('nameID');
 
 
-document.getElementById('btnid')
-    .addEventListener('click', check)
+function text(){
+    document.querySelector("#s1").style.display = 'none';
+    document.querySelector("#s2").style.display = 'block';
+}
+
+function text2(){
+    let bg = document.querySelector(".html");
+        bg.classList.remove('bgblack');
+        bg.classList.add('bgred');
+    document.querySelector("#s2").style.display = 'none';
+    document.querySelector("#s3").style.display = 'block';
+}
 
 function check() {
     if(document.getElementById("nameID").value.length == ""){
         alert('Por favor, preencha o campo nome');
         document.getElementById("nameID").focus();
+    }else{
+        text();
     }
-    text();
 }
 
 function check2() {
     if(document.getElementById("ageID").value.length == ""){
-        alert('Por favor, preencha o campo nome');
+        alert('Por favor, preencha o campo idade');
         document.getElementById("ageID").focus();
+    }else{
+        text2();
     }
 }
 
-document.getElementById('btnid2')
-    .addEventListener('click', check2)
+document.getElementById('btnid')
+    .addEventListener('click', check)
 
+document.getElementById('btnid2')
+.addEventListener('click', check2)
